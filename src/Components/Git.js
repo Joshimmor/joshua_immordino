@@ -65,6 +65,11 @@ export default function Git(props) {
                           <span onClick={()=> window.open("someLink", "_blank")}><FontAwesomeIcon className="icons" icon={faDribbble}/></span>
                     </Col>
                 </Row>
+                <Row >
+                      <img src="src/assets/anime1.jpg" 
+                      alt="anime"
+                      width="30"/>
+                </Row>
                
         </TabPane>
         <TabPane tabId="3">
