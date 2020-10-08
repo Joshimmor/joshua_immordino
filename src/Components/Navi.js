@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import {Modal, ModalBody, ModalHeader} from "reactstrap";
-import styled from "styled-components";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode, faUserCircle ,faComments} from '@fortawesome/free-solid-svg-icons';
 import Git from "./Git";
 import About from "./About";
-import '../App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCode, faUserCircle ,faComments} from '@fortawesome/free-solid-svg-icons';
+import "./navi.css"
 
 
  class Navi extends Component {
@@ -14,7 +13,7 @@ import '../App.css';
       this.state = {
        isGitOpen:false,
        isAboutOpen:false,
-       isContactOpen:false
+       isContactOpen:false,
      }
      this.toggleGit = this.toggleGit.bind(this);
      this.toggleAbout = this.toggleAbout.bind(this);
@@ -35,31 +34,19 @@ import '../App.css';
       isContactOpen:!this.state.isContactOpen
       });
    };
-
+   
   render() {
-    const Navig = styled.div`
-    position: absolute;
-    bottom: 1vh;
-    width: 100%;
-    display: grid;
-    place-items: center;
-    
-    `
-  
-
     
     return (
       
        <React.Fragment>
-            <Navig >
-               <div>
-                    <span onClick={this.toggleGit}><FontAwesomeIcon  className="icons " icon={faCode}/></span>
-                    <span  onClick={this.toggleAbout}><FontAwesomeIcon className="icons " icon={faUserCircle  }/></span>
-                    <span  onClick={this.toggleContact}> <FontAwesomeIcon  className="icons " icon={faComments  }/>  </span>
-              </div>   
-            </Navig>
+            <div className="navig" >
+                    <span  className="left" onClick={this.toggleGit}><FontAwesomeIcon  icon={faCode}/></span>
+                    <span  onClick={this.toggleAbout}><FontAwesomeIcon  icon={faUserCircle}/></span>
+                    <span className="right" onClick={this.toggleContact}><FontAwesomeIcon  icon={faComments}/></span>
+            </div>
             <Modal isOpen={this.state.isGitOpen} toggle={this.toggleGit} >
-              <ModalHeader toggle={this.toggleGit}>Git</ModalHeader>
+              <ModalHeader toggle={this.toggleGit}>Portfolio</ModalHeader>
               <ModalBody>
                   <Git/>
               </ModalBody>
@@ -67,7 +54,7 @@ import '../App.css';
             <Modal isOpen={this.state.isAboutOpen} toggle={this.toggleAbout} >
               <ModalHeader toggle={this.toggleAbout}>Joshua R Immordino</ModalHeader>
               <ModalBody>
-                  <About/>
+                  <About loading={this.state.isAboutOpen}/>
               </ModalBody>
             </Modal>
             <Modal isOpen={this.state.isContactOpen} toggle={this.toggleContact} >

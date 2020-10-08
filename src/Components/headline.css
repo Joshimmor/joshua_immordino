@@ -16,6 +16,12 @@
     position: absolute;
     bottom: 0;
 }
+.headline-content{
+    width:100%;
+}
+.headline-content > h1, .headline-content > h4{
+    color:#373a40d1
+}
 @media only screen and (max-width:600px){
     .tag{
         padding:0 15px 15px 15px;  

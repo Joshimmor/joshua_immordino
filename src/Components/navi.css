@@ -1,0 +1,14 @@
+.navig {
+position: absolute;
+bottom: 0;
+height: 5vh;
+width: 100vw;
+display: flex;
+justify-content: space-between;
+}
+.left{
+    padding-left: 30px
+}
+.right{
+    padding-right: 30px
+}

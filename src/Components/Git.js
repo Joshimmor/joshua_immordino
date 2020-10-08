@@ -3,6 +3,7 @@ import  {TabContent, TabPane, Nav, NavItem, NavLink,Row, Col } from 'reactstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGit, faUsb,faDribbble } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import "./gitStyle.css";
 export default function Git(props) {
   const [activeTab, setActiveTab] = useState('1');
   return (
@@ -40,11 +41,11 @@ export default function Git(props) {
                 <Col md="8">
                   <p>A New York based fitness training center, I built this site using Bootstrap,Custom Css and Vanilla Javascript.This is a fully responsive E-commerce site with a Wordpress blog attached. </p>
                 </Col>
-                <Col md="4">
-                      <span onClick={()=> window.open("https://github.com/Joshimmor/LaCultura", "_blank")}><FontAwesomeIcon  className="icons " icon={faGit}/></span>
-                      <span onClick={()=> window.open("https://lacultura.training/", "_blank")}><FontAwesomeIcon  className="icons " icon={faUsb}/></span>
-                      <spa onClick={()=> window.open("https://lacultura.training/#contact", "_blank")}n><FontAwesomeIcon className="icons" icon={faEnvelope}/></spa>
-                      <span onClick={()=> window.open("https://dribbble.com/shots/14077907-Lacultura-E-Commerce", "_blank")}><FontAwesomeIcon className="icons" icon={faDribbble}/></span>
+                <Col className="link-container" md="4">
+                      <span onClick={()=> window.open("https://github.com/Joshimmor/LaCultura", "_blank")}><FontAwesomeIcon  className="modal-links" icon={faGit}/></span>
+                      <span onClick={()=> window.open("https://lacultura.training/", "_blank")}><FontAwesomeIcon  className="modal-links" icon={faUsb}/></span>
+                      <spa onClick={()=> window.open("https://lacultura.training/#contact", "_blank")}n><FontAwesomeIcon className="modal-links" icon={faEnvelope}/></spa>
+                      <span onClick={()=> window.open("https://dribbble.com/shots/14077907-Lacultura-E-Commerce", "_blank")}><FontAwesomeIcon className="modal-links" icon={faDribbble}/></span>
                 </Col>
             </Row>
         </TabPane>
@@ -58,19 +59,13 @@ export default function Git(props) {
                     <Col md="8">
                       <p>React based interface, it fetches all data from a Restful API and adapts on the fly. It implements Axios, React Spring, React Router and Netlify. </p>
                     </Col>
-                    <Col md="4">
-                          <span onClick={()=> window.open("someLink", "_blank")}><FontAwesomeIcon  className="icons " icon={faGit}/></span>
-                          <span onClick={()=> window.open("someLink", "_blank")}><FontAwesomeIcon  className="icons " icon={faUsb}/></span>
-                          <span onClick={()=> window.open("someLink", "_blank")}><FontAwesomeIcon className="icons" icon={faEnvelope}/></span>
-                          <span onClick={()=> window.open("someLink", "_blank")}><FontAwesomeIcon className="icons" icon={faDribbble}/></span>
+                    <Col className="link-container" md="4">
+                          <span onClick={()=> window.open("https://github.com/Joshimmor/anime_streaming_app", "_blank")}><FontAwesomeIcon   icon={faGit}/></span>
+                          <span onClick={()=> window.open("https://mangamanager.netlify.app/", "_blank")}><FontAwesomeIcon   icon={faUsb}/></span>
+                          <span onClick={()=> window.open("mailto:joshimmor@gmail.com", "_blank")}><FontAwesomeIcon  icon={faEnvelope}/></span>
+                          <span onClick={()=> window.open("https://dribbble.com/shots/14330521-mangaManager-Home-Page", "_blank")}><FontAwesomeIcon  icon={faDribbble}/></span>
                     </Col>
-                </Row>
-                <Row >
-                      <img src="src/assets/anime1.jpg" 
-                      alt="anime"
-                      width="30"/>
-                </Row>
-               
+                </Row>  
         </TabPane>
         <TabPane tabId="3">
               <Row className="mt-2">
@@ -80,13 +75,14 @@ export default function Git(props) {
                 </Row>
                 <Row>
                     <Col md="8">
-                      <p>A New York based fitness training center, I built this site using Bootstrap,Custom Css and Vanilla Javascript.</p>
+                      <p>This is the class lead project that walk us throught the creation of a React-Native Application, it also exposed me to Expo SDK and 
+                        tapping in to a phones mircophone, camera and Gallery. </p>
                     </Col>
-                    <Col md="4">
-                          <span onClick={()=> window.open("someLink", "_blank")}><FontAwesomeIcon  className="icons " icon={faGit}/></span>
-                          <span onClick={()=> window.open("https://5f72b363fc2d6d1f6be0a2f0--pedantic-booth-58cfaf.netlify.app/", "_blank")}><FontAwesomeIcon  className="icons " icon={faUsb}/></span>
-                          <span onClick={()=> window.open("someLink", "_blank")}><FontAwesomeIcon className="icons" icon={faEnvelope}/></span>
-                          <span onClick={()=> window.open("someLink", "_blank")}><FontAwesomeIcon className="icons" icon={faDribbble}/></span>
+                    <Col className="link-container" md="4">
+                          <span onClick={()=> window.open("https://github.com/Joshimmor/nucamp-react-native", "_blank")}><FontAwesomeIcon   icon={faGit}/></span>
+                          <span onClick={()=> window.open("https://github.com/Joshimmor/nucamp-react-native", "_blank")}><FontAwesomeIcon   icon={faUsb}/></span>
+                          <span onClick={()=> window.open("mailto:joshimmor@gmail.com", "_blank")}><FontAwesomeIcon  icon={faEnvelope}/></span>
+                          <span onClick={()=> window.open("https://dribbble.com/alienBlue", "_blank")}><FontAwesomeIcon  icon={faDribbble}/></span>
                     </Col>
                 </Row>
         </TabPane>
@@ -98,13 +94,13 @@ export default function Git(props) {
                 </Row>
                 <Row>
                     <Col md="8">
-                      <p>A New York based fitness training center, I built this site using Bootstrap,Custom Css and Vanilla Javascript.</p>
+                      <p>This site right here, made with React, ReactStrap and React Spring.</p>
                     </Col>
-                    <Col md="4">
-                          <span onClick={()=> window.open("someLink", "_blank")}><FontAwesomeIcon  className="icons " icon={faGit}/></span>
-                          <span onClick={()=> window.open("someLink", "_blank")}><FontAwesomeIcon  className="icons " icon={faUsb}/></span>
-                          <span onClick={()=> window.open("someLink", "_blank")}><FontAwesomeIcon className="icons" icon={faEnvelope}/></span>
-                          <span onClick={()=> window.open("someLink", "_blank")}><FontAwesomeIcon className="icons" icon={faDribbble}/></span>
+                    <Col className="link-container" md="4">
+                          <span onClick={()=> window.open("https://github.com/Joshimmor", "_blank")}><FontAwesomeIcon   icon={faGit}/></span>
+                          <span onClick={()=> window.open("joshuaimmordino.com", "_blank")}><FontAwesomeIcon   icon={faUsb}/></span>
+                          <span onClick={()=> window.open("mailto:joshimmor@gmail.com", "_blank")}><FontAwesomeIcon  icon={faEnvelope}/></span>
+                          <span onClick={()=> window.open("https://dribbble.com/alienBlue", "_blank")}><FontAwesomeIcon  icon={faDribbble}/></span>
                     </Col>
                 </Row>
         </TabPane>
