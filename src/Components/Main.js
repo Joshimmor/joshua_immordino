@@ -1,33 +1,19 @@
 import React, { Component } from 'react';
-import {Jumbotron,Container,Row} from "reactstrap";
-import styled from 'styled-components';
-
+import {Container,Row} from "reactstrap";
+import  './headline.css'
 export class Main extends Component {
   render() {
-    const Name = styled.h1`
-    margin-left:15px;
-    position: absolute;
-    bottom: 15vh;
-    font-size: 4.5rem;
-    `
-    const Tag = styled.h4`
-    margin:15px;
-    padding:15px;
-    position: absolute;
-    bottom: 10vh;
-    font-size: 2 rem
-    `
     return (
-      <Jumbotron fluid className="p-0 m-0">
-        <Container fluid>
+       <Container fluid className="headline">
             <Row>
              
-                  <Name>Joshua Immordino</Name>
+                  <h1 className="name">Joshua Immordino</h1>
               
-                  <Tag>New York based React Developer<br/> with a passion for new emerging technologies.</Tag>
+                  <h4 className="tag">New York based React Developer<br/>
+                   with a passion for new emerging technologies.</h4>
             </Row>
         </Container>
-      </Jumbotron>
+
     )
   }
 }

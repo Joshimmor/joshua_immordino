@@ -50,7 +50,7 @@ export default function Git(props) {
         </TabPane>
         <TabPane tabId="2">
             <Row className="mt-2">
-                    <Col  sm="12">
+                    <Col  sm="6">
                       <h4>Anime Streaming Front-end </h4>
                     </Col>
                 </Row>
@@ -65,6 +65,7 @@ export default function Git(props) {
                           <span onClick={()=> window.open("someLink", "_blank")}><FontAwesomeIcon className="icons" icon={faDribbble}/></span>
                     </Col>
                 </Row>
+               
         </TabPane>
         <TabPane tabId="3">
               <Row className="mt-2">
