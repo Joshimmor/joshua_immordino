@@ -1,9 +1,8 @@
 import React from "react";
 import {Row, Col} from "reactstrap";
 import {animated, useSpring} from "react-spring";
-import {Link} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGit, faUsb,faDribbble } from "@fortawesome/free-brands-svg-icons"
+import { faGit,faDribbble } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import "./about.css";
 
