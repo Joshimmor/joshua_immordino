@@ -1,20 +1,131 @@
-.javascript-skill{
-  height:10px;
-  width: 150px;
-  background-color: black
-  }
- .react-skill {
-  height:10px;
-  width: 100px;
-  background-color: black
-  }
- .css-skill {
-  height:10px;
-  width: 120px;
-  background-color: black
+
+ .about{
+  position: relative;
+   height: 95vh;
+   background-color: #0B0B0B
  }
- .html-skill {
-  height:10px;
-  width: 120px;
-  background-color: black
+ .skill-row{
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   
+ }
+ skill-row-right{
+  position: relative
+ }
+ .javascript-skill{
+   padding: 15px 15px 15px 15px;
+ }
+ .javascript-skill > h4{
+   color: white;
+ }
+ .adobesuite-skill{
+  padding: 15px 15px 15px 15px;
+  text-align: right;
+}
+.adobesuite-skill > h4{
+  color: white;
+}
+ .react-skill{
+  padding: 15px 15px 15px 15px;
+}
+.react-skill > h4{
+  color: white;
+}
+.css-skill{
+  padding: 15px 15px 15px 15px;
+}
+.css-skill > h4{
+  color: white;
+}
+.python-skill{
+  padding: 15px 15px 15px 15px;
+}
+.python-skill > h4{
+  color: white;
+}
+ .javascript-status-bar{
+   background-color: white;
+   height:1rem;
+   width: 75%;
+ }
+ .logical-skill{
+  padding: 15px 15px 15px 15px;
+  text-align: right;
+ }
+ .logical-skill > h4{
+  color: white;
+ }
+ .logical-status-bar{
+  background-color: white;
+  height:1rem;
+  width: 75%;
+  position: absolute;
+  right:0;
+ }
+ .sketch-skill{
+  padding: 15px 15px 15px 15px;
+  text-align: right;
+ }
+ .sketch-skill > h4{
+  color: white;
+ }
+ .sketch-status-bar{
+  background-color: white;
+  height:1rem;
+  width: 60%;
+  position: absolute;
+  right:0;
+ }
+ .react-status-bar{
+  background-color: white;
+  height:1rem;
+  width:60% ;
+}
+.css-status-bar{
+  background-color: white;
+  height:1rem;
+  width:75% ;
+}
+.python-status-bar{
+  background-color: white;
+  height:1rem;
+  width: 40%;
+}
+.adobesuite-status-bar{
+  background-color: white;
+  height:1rem;
+  width: 75%;
+  position: absolute;
+  right:0;
+}
+.bio-row{
+  position: absolute;
+  padding:15px;
+  bottom: 42.5%;
+}
+.bio-col{
+  color:rgba(255, 255, 255, 0.798)
+}
+.icon-row{
+  margin:0 !important;
+  display: flex;
+  width:100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 26 %;
+}
+.icon-left{
+  padding-left: 30px;
+}
+.icon-right{
+  padding-right: 30px;
+}
+ @media only screen and (max-width:600px){
+  .about{
+    height: 95vh;
+  }
+  .bio-row{
+    padding-left: 0 !important;
+  }
  }

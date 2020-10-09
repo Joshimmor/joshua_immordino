@@ -44,7 +44,7 @@ export default function Git(props) {
                 <Col className="link-container" md="4">
                       <span onClick={()=> window.open("https://github.com/Joshimmor/LaCultura", "_blank")}><FontAwesomeIcon  className="modal-links" icon={faGit}/></span>
                       <span onClick={()=> window.open("https://lacultura.training/", "_blank")}><FontAwesomeIcon  className="modal-links" icon={faUsb}/></span>
-                      <spa onClick={()=> window.open("https://lacultura.training/#contact", "_blank")}n><FontAwesomeIcon className="modal-links" icon={faEnvelope}/></spa>
+                      <span onClick={()=> window.open("https://lacultura.training/#contact", "_blank")}n><FontAwesomeIcon className="modal-links" icon={faEnvelope}/></span>
                       <span onClick={()=> window.open("https://dribbble.com/shots/14077907-Lacultura-E-Commerce", "_blank")}><FontAwesomeIcon className="modal-links" icon={faDribbble}/></span>
                 </Col>
             </Row>

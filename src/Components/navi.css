@@ -7,8 +7,13 @@ display: flex;
 justify-content: space-between;
 }
 .left{
-    padding-left: 30px
+    padding-left: 30px;
+    color:#121315d1
+}
+.center{
+    color:#121315d1
 }
 .right{
-    padding-right: 30px
+    padding-right: 30px;
+    color:#121315d1
 }
