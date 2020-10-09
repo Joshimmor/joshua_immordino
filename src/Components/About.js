@@ -97,14 +97,11 @@ function SkillsTop (){
      }
    });
   return(
-    <React.Fragment>
-        <animated.div style={swipeDown} className="about">
+     <animated.div style={swipeDown} className="about">
               <SkillsTop/>
               <Bio/>
               <Skills/>
-          </animated.div>
-
-    </React.Fragment>
+      </animated.div>
   )
 };
 
