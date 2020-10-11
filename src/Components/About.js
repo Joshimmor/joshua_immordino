@@ -23,7 +23,7 @@ function Bio(){
         <h4>I'm a Frontend Developer from New York, I have an extensive background in SEO, UX and User Research </h4>
       </Col>
       <Col  md="6"  className="d-none d-lg-flex icon-row">
-                                <animated.span style={iconAnimation} onClick={()=> window.open("https://github.com/Joshimmor/nucamp-react-native", "_blank")} className="icon-left"><FontAwesomeIcon   icon={faGit}/></animated.span>
+                                <animated.span style={iconAnimation} onClick={()=> window.open("https://github.com/Joshimmor", "_blank")} className="icon-left"><FontAwesomeIcon   icon={faGit}/></animated.span>
                                 <animated.span style={iconAnimation} onClick={()=> window.open("mailto:joshimmor@gmail.com", "_blank")}><FontAwesomeIcon  icon={faEnvelope}/></animated.span>
                                 <animated.span style={iconAnimation} onClick={()=> window.open("https://dribbble.com/alienBlue", "_blank")} className="icon-right"><FontAwesomeIcon  icon={faDribbble}/></animated.span>
       </Col>
@@ -78,7 +78,7 @@ function Skills (){
         </Col>
         <Col xs="4" className="mobile-icon-box">
           <Row xs="12" className="button-row-git">
-             <animated.span style={iconAnimation} onClick={()=> window.open("https://github.com/Joshimmor/nucamp-react-native", "_blank")} ><FontAwesomeIcon   icon={faGit}/></animated.span>
+             <animated.span style={iconAnimation} onClick={()=> window.open("https://github.com/Joshimmor", "_blank")} ><FontAwesomeIcon   icon={faGit}/></animated.span>
           </Row> 
           <Row xs="12" className="button-row-email">
              <animated.span style={iconAnimation} onClick={()=> window.open("mailto:joshimmor@gmail.com", "_blank")}><FontAwesomeIcon  icon={faEnvelope}/></animated.span>
