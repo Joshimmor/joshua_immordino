@@ -142,6 +142,9 @@
   .about{
     height: 80vh;
   }
+  .bio-col{
+    padding-left: 0 !important;
+  }
   .bio-row{
     top:10vh;
     padding: 0 15px 0 15px !important;
@@ -157,7 +160,7 @@
   }
   .button-row-git{
     position: absolute;
-    top:10%;
+    top:0;
     right:20%
   }
   .button-row-email{
@@ -167,7 +170,7 @@
   }
   .button-row-dribble{
     position: absolute;
-    bottom:10%;
+    bottom:0;
     right:20%
   }
  }
