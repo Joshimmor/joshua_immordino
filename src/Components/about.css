@@ -123,13 +123,11 @@
 }
  @media only screen and (max-width:600px){
   .about{
-    height: 85vh;
+    height: 80vh;
   }
   .bio-row{
-    
-  }
-  .bio-row{
-    top:10vh
+    top:10vh;
+    padding: 0 15px 0 15px !important;
   }
   .icon-row{
     top:0
