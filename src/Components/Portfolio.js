@@ -21,11 +21,11 @@ function Portfolio () {
     })
     return (
        <div  className="portfolio">
-            <animated.div style={leftAnimation} className="portfolio-row">
+            <animated.div style={leftAnimation} className="portfolio-row ">
                 <div className="project-title">
                     <h1>LaCultura //</h1>
                 </div>
-                <div className="project-text">
+                <div className="d-none d-lg-block project-text">
                     <p>random text about some stupid product and working on a team</p>
                 </div>
                 <div className="button-row">
@@ -36,7 +36,7 @@ function Portfolio () {
                 <div className="project-title-left">
                     <h1>Rest API App //</h1>
                 </div>
-                <div className="project-text-left">
+                <div className="d-none d-lg-block project-text-left">
                     <p>random text about some stupid product and working on a team</p>
                 </div>
                 <div className="button-row-left">
@@ -47,7 +47,7 @@ function Portfolio () {
                 <div className="project-title">
                     <h1>NuCamp App //</h1>
                 </div>
-                <div className="project-text">
+                <div className="d-none d-lg-block project-text">
                     <p>random text about some stupid product and working on a team</p>
                 </div>
                 <div className="button-row">
@@ -58,7 +58,7 @@ function Portfolio () {
                 <div className="project-title-left">
                     <h1>Portfolio //</h1>
                 </div>
-                <div className="project-text-left">
+                <div className="d-none d-lg-block project-text-left">
                     <p>random text about some stupid product and working on a team</p>
                 </div>
                 <div className="button-row-left">

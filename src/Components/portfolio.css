@@ -52,7 +52,7 @@
     transition: all 1s;
 }
 .learn-more-button-left:hover {
-    background-color: rgb(255, 255, 255);;
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 }
 .button-row{
@@ -79,5 +79,14 @@
     }
     .portfolio{
         height: 80vh;
+    }
+    .project-text{
+        display: none !important;
+    }
+    .portfolio-row-lgt{
+        height:20vh !important;
+    }
+    .portfolio-row{
+        height:20vh;
     }
 }

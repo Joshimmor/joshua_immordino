@@ -70,7 +70,7 @@ function SkillsTop (){
     },
   })
   return(
-      <Row className="skill-row-right"xs="12">
+      <Row className="d-none d-lg-block skill-row-right"xs="12">
           <Col xs="12"className="adobesuite-skill">
              <h4>Adobe Suite</h4> 
              <animated.div style={load}  className="adobesuite-status-bar"/>
