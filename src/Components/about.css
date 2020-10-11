@@ -6,7 +6,7 @@
  }
  .skill-row{
    position: absolute;
-   bottom: 0;
+   bottom: 10px;
    width: 100%;
    
  }
@@ -14,7 +14,7 @@
   position: relative
  }
  .javascript-skill{
-   padding: 15px 15px 15px 15px;
+   padding: 15px 15px 8px 15px;
  }
  .javascript-skill > h4{
    color: white;
@@ -27,19 +27,19 @@
   color: white;
 }
  .react-skill{
-  padding: 15px 15px 15px 15px;
+  padding: 15px 15px 8px 15px;
 }
 .react-skill > h4{
   color: white;
 }
 .css-skill{
-  padding: 15px 15px 15px 15px;
+  padding: 15px 15px 8px 15px;
 }
 .css-skill > h4{
   color: white;
 }
 .python-skill{
-  padding: 15px 15px 15px 15px;
+  padding: 15px 15px 8px 15px;
 }
 .python-skill > h4{
   color: white;
@@ -103,6 +103,8 @@
   position: absolute;
   padding:15px;
   bottom: 42.5%;
+  width:100%;
+  margin-left: 0;
 }
 .bio-col{
   color:rgba(255, 255, 255, 0.798)
@@ -121,6 +123,21 @@
 .icon-right{
   padding-right: 30px;
 }
+.javascript-status-row{
+  padding: 0;
+}
+.python-status-row{
+  padding: 0 0 0 15px;
+}
+.react-status-row{
+  padding: 0;
+}
+.css-status-row{
+  padding: 0;
+}
+.mobile-icon-box{
+  display: none ;
+}
  @media only screen and (max-width:600px){
   .about{
     height: 80vh;
@@ -131,5 +148,26 @@
   }
   .icon-row{
     top:0
+  }
+  .mobile-icon-box{
+    height: 40vh;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center
+  }
+  .button-row-git{
+    position: absolute;
+    top:10%;
+    right:20%
+  }
+  .button-row-email{
+    position: absolute;
+    top:50%;
+    right:20%
+  }
+  .button-row-dribble{
+    position: absolute;
+    bottom:10%;
+    right:20%
   }
  }
