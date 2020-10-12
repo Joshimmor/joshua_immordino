@@ -1,0 +1,36 @@
+.project-container{
+    position: relative;
+    height: 95vh;
+    top: 0;
+    padding: 0;
+    width: 100%;
+    background-color: black;
+}
+.project-nav-row{
+    height: 10vh;
+}
+.backbutton-col{
+    text-align: center;
+}
+.backbutton{
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    font-size: medium;
+    color: rgba(255, 255, 255, 0.521);
+}
+.project-icon-row{
+    justify-content: space-between;
+    display: flex;
+    margin-left: 20%;
+}
+.page-icons{
+    position: relative;
+    top: 45%;
+}
+.project-icon-left{
+    padding-left: 20px;
+}
+.project-icon-right{
+    padding-right: 20px;
+}

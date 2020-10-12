@@ -1,6 +1,7 @@
 import React from 'react';
-import  './portfolio.css'
-import {useSpring, animated} from 'react-spring'
+import  './portfolio.css';
+import {useSpring, animated} from 'react-spring';
+import {Link} from "react-router-dom";
 
 function Portfolio () {
     const leftAnimation = useSpring({
@@ -26,18 +27,20 @@ function Portfolio () {
                     <h1>LaCultura</h1>
                 </div>
                 <div className="d-none d-lg-block project-text">
-                    <p>random text about some stupid product and working on a team</p>
+                    <p>You can do this Josh</p>
                 </div>
                 <div className="button-row">
-                    <button className="learn-more-button">Learn More</button>
+                    <Link key="LaCultura" to={'/lacultura'}>
+                        <button className="learn-more-button">Learn More</button>
+                    </Link>
                 </div>
             </animated.div>
             <animated.div style={rightAnimation} className="portfolio-row-lgt">
                 <div className="project-title-left">
-                    <h1>Rest API App</h1>
+                    <h1>Anime API App</h1>
                 </div>
                 <div className="d-none d-lg-block project-text-left">
-                    <p>random text about some stupid product and working on a team</p>
+                    <p>Dont beat yourself up</p>
                 </div>
                 <div className="button-row-left">
                     <button className="learn-more-button-left">Learn More</button>
@@ -48,7 +51,7 @@ function Portfolio () {
                     <h1>NuCamp App</h1>
                 </div>
                 <div className="d-none d-lg-block project-text">
-                    <p>random text about some stupid product and working on a team</p>
+                    <p>Love yourself</p>
                 </div>
                 <div className="button-row">
                     <button className="learn-more-button">Learn More</button>
@@ -59,7 +62,7 @@ function Portfolio () {
                     <h1>Portfolio</h1>
                 </div>
                 <div className="d-none d-lg-block project-text-left">
-                    <p>random text about some stupid product and working on a team</p>
+                    <p>it will be ok in the end, you dont need to succeed right now</p>
                 </div>
                 <div className="button-row-left">
                     <button className="learn-more-button-left">Learn More</button>

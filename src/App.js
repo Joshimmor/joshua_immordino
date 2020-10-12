@@ -3,6 +3,7 @@ import Navi from "./Components/Navi";
 import Main from "./Components/Main";
 import Portfolio from "./Components/Portfolio";
 import About from "./Components/About";
+import LaCultura from "./Components/LaCultura";
 import {
   BrowserRouter as Router,
   Switch,
@@ -23,6 +24,10 @@ class App extends React.Component {
                   <Route path="/about">
                     <About />
                   </Route>
+                  <Route path="/lacultura">
+                    <LaCultura />
+                  </Route>
+                  
                   <Route path="/">
                     <Main />
                   </Route>
