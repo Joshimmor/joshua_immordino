@@ -22,7 +22,7 @@ function Bio(){
       <Col md="6" className="bio-col">
         <h4>I'm a Frontend Developer from New York, I have an extensive background in SEO, UX and User Research </h4>
       </Col>
-      <Col  md="6"  className="d-none d-lg-flex icon-row">
+      <Col  md="6"  className="d-none d-md-flex icon-row">
                                 <animated.span style={iconAnimation} onClick={()=> window.open("https://github.com/Joshimmor", "_blank")} className="icon-left"><FontAwesomeIcon   icon={faGit}/></animated.span>
                                 <animated.span style={iconAnimation} onClick={()=> window.open("mailto:joshimmor@gmail.com", "_blank")}><FontAwesomeIcon  icon={faEnvelope}/></animated.span>
                                 <animated.span style={iconAnimation} onClick={()=> window.open("https://dribbble.com/alienBlue", "_blank")} className="icon-right"><FontAwesomeIcon  icon={faDribbble}/></animated.span>
@@ -101,7 +101,7 @@ function SkillsTop (){
     },
   })
   return(
-      <Row className="d-none d-lg-block skill-row-right"xs="12">
+      <Row className="d-none d-md-block skill-row-right"xs="12">
           <Col xs="12"className="adobesuite-skill">
              <h4>Adobe Suite</h4> 
              <animated.div style={load}  className="adobesuite-status-bar"/>
